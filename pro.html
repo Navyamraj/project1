@@ -1,0 +1,78 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Symptoms Checker</title>
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Symptoms Checker</h1>
+    <p>Select symptoms to learn about potential conditions.</p>
+  </header>
+
+  <main>
+    <section class="symptoms-form">
+      <h2>Select Your Symptoms:</h2>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" class="symptom" value="Fever"> Fever
+        </label>
+        <label>
+          <input type="checkbox" class="symptom" value="Cough"> Cough
+        </label>
+        <label>
+          <input type="checkbox" class="symptom" value="Fatigue"> Fatigue
+        </label>
+        <label>
+          <input type="checkbox" class="symptom" value="Headache"> Headache
+        </label>
+        <label>
+          <input type="checkbox" class="symptom" value="Sore Throat"> Sore Throat
+        </label>
+        <label>
+          <input type="checkbox" class="symptom" value="Shortness of Breath"> Shortness of Breath
+        </label>
+      </div>
+      <button id="check-symptoms">Check Symptoms</button>
+    </section>
+
+    <section class="results">
+      <h2>Selected Symptoms:</h2>
+      <div id="selected-symptoms">None</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Interactive Symptoms Checker</p>
+  </footer>
+
+  <script>
+    const symptomCheckboxes = document.querySelectorAll('.symptom');
+    const selectedSymptomsDiv = document.getElementById('selected-symptoms');
+    const checkSymptomsButton = document.getElementById('check-symptoms');
+
+    checkSymptomsButton.addEventListener('click', () => {
+      const selectedSymptoms = [];
+      symptomCheckboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+          selectedSymptoms.push(checkbox.value);
+        }
+      });
+
+      selectedSymptomsDiv.textContent = selectedSymptoms.length > 0
+        ? selectedSymptoms.join(', ')
+        : 'None';
+    });
+  </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1{
+            color: #333333;
+        }
+        p, li, label {
+            font-size: 16px;
+            color: #555;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: #ffd700;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>example of selection form</h1>
+    </header>
+
+    <div class="container">
+        <h2>Form Section</h2>
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <h2>Table Section</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+            </tr>
+        </table>
+
+        <h2>List Section</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ol>
+
+        <h2>Text Formatting</h2>
+        <p>This is a <strong>bold</strong> text and this is an <em>italicized</em> text.</p>
+        <p>Here is a highlighted word: <span class="highlight">important</span></p>
+
+        <h2>Button Example</h2>
+        <button>Click Me!</button>
+    </div>
+
+</body>
+</html>
